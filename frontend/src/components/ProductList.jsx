@@ -1,94 +1,3 @@
-// import { useEffect, useState } from 'react';
-// import axios from 'axios';
-// import ProductForm from './ProductForm';
-
-// const ProductList = () => {
-//   const [products, setProducts] = useState([]);
-//   const [search, setSearch] = useState('');
-//   const [filteredProducts, setFilteredProducts] = useState([]);
-
-//   // Fetch products on component mount
-//   useEffect(() => {
-//     const fetchProducts = async () => {
-//       try {
-//         console.log('Fetching products...');
-//         const response = await axios.get('http://localhost:5000/api/products'); // Correct backend API URL
-//         console.log('Products fetched:', response.data);
-
-//         setProducts(response.data);
-//         setFilteredProducts(response.data);
-//       } catch (error) {
-//         console.error('Error fetching products:', error);
-//       }
-//     };
-
-//     fetchProducts();
-//   }, []);
-
-//   // Search filter functionality
-//   useEffect(() => {
-//     const results = products.filter((product) =>
-//       product.name.toLowerCase().includes(search.toLowerCase())
-//     );
-//     setFilteredProducts(results);
-//   }, [search, products]);
-
-//   const handleProductAdded = (newProduct) => {
-//     setProducts((prevProducts) => [...prevProducts, newProduct]);
-//     setFilteredProducts((prevProducts) => [...prevProducts, newProduct]);
-//   };
-
-//   return (
-//     <div className="container mx-auto p-4">
-//       <h1 className="text-2xl font-bold mb-4">Product List</h1>
-
-//       {/* Search Bar */}
-//       <input
-//         type="text"
-//         placeholder="Search by name..."
-//         className="border p-2 mb-4 w-full rounded"
-//         value={search}
-//         onChange={(e) => setSearch(e.target.value)}
-//       />
-
-//       {/* Product Form */}
-//       <ProductForm onProductAdded={handleProductAdded} />
-
-//       {/* Product Display */}
-//       {filteredProducts.length > 0 ? (
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-//           {filteredProducts.map((product) => (
-//             <div key={product.id} className="border p-4 rounded shadow">
-//               <img
-//                 src={product.image_urls[0]}
-//                 alt={product.name}
-//                 className="w-full h-40 object-cover mb-2 rounded"
-//               />
-//               <h2 className="text-lg font-semibold">{product.name}</h2>
-//               <p>Price: ${product.price}</p>
-//               <p>Quantity: {product.quantity}</p>
-//               {product.is_active ? (
-//                 <span className="text-green-600">Available</span>
-//               ) : (
-//                 <span className="text-red-600">Not Available</span>
-//               )}
-//             </div>
-//           ))}
-//         </div>
-//       ) : (
-//         <p className="text-center text-gray-500">No products found.</p>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ProductList;
-
-
-
-
-
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './ProductList.css';
@@ -301,7 +210,7 @@ export default ProductList;
 
 //       try {
 //         const response = await fetch(
-//           `https://surelock.vercel.app/api/products?name=${searchQuery}`, // Include the search query in the request
+//           `https://surelock.vercel.app/api/products?name=${searchQuery}`,
 //           {
 //             method: 'GET',
 //             headers: {
