@@ -9,6 +9,8 @@ open port accordingly, update ports used for backend if needed or frontend, used
 
 You can do all areas according to requirements with mobile style added.
 
+PS your API has not been updating data, I added it differently
+
 Thanks.
 Mindaugas Rimkevicius
 
