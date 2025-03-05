@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "description": "A  of product",
+    "price": 29.77,
+    "quantity": 10,
+    "image_urls": [
+      "https://127.0.0.1"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "description": "product 2",
+    "price": 39.99,
+    "quantity": 500,
+    "image_urls": [
+      "https://cdn.pixabay.com/photo/2013/07/12/14/06/arrows-147744_1280.png"
+    ],
+    "is_active": false
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "description": "A short 3",
+    "price": 19.99,
+    "quantity": 200,
+    "image_urls": [
+      "https://cdn.pixabay.com/photo/2013/07/12/14/06/arrows-147744_1280.png"
+    ],
+    "is_active": false
+  },
+  {
+    "name": "dd11111",
+    "description": "ww",
+    "price": 1,
+    "image_urls": [
+      ""
+    ],
+    "id": 4,
+    "is_active": true
+  },
+  {
+    "name": "ss",
+    "description": "gg",
+    "price": 1,
+    "quantity": 1,
+    "is_active": false,
+    "image_urls": [
+      "ooo"
+    ],
+    "id": 5
+  },
+  {
+    "id": 13,
+    "name": "ttt",
+    "description": "",
+    "price": 22,
+    "quantity": "",
+    "is_active": true,
+    "image_urls": [
+      "https://cdn.pixabay.com/photo/2013/07/12/14/06/arrows-147744_1280.png"
+    ]
+  }
+]
