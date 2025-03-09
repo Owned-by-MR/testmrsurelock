@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c9f7fe;
     padding: 20px;
   }
   
@@ -20,6 +20,10 @@ body {
     color: #333;
   }
   
+
+  h3 {
+    color: #7e572d;
+  }
   form {
     display: flex;
     flex-wrap: wrap;

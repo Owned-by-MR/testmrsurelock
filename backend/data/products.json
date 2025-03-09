@@ -8,7 +8,7 @@
     "image_urls": [
       "https://127.0.0.1"
     ],
-    "is_active": true
+    "is_active": false
   },
   {
     "id": 2,
@@ -62,6 +62,17 @@
     "is_active": true,
     "image_urls": [
       "https://cdn.pixabay.com/photo/2013/07/12/14/06/arrows-147744_1280.png"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "yyyy",
+    "description": "",
+    "price": 1,
+    "quantity": "",
+    "is_active": true,
+    "image_urls": [
+      ""
     ]
   }
 ]

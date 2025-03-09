@@ -1,17 +1,57 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductList from './components/ProductList';
-import ProductDetails from './components/ProductDetails';
-
 
 const App = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/products');
+        const result = await response.json();
+        setProducts(result);
+      } catch (error) {
+        console.error("Error fetching product data: ", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return <div>Loading product list...</div>;
+  }
+
   return (
     <div>
-      <ProductList />
+      <h1>Product List</h1>
+      <ProductList products={products} />
     </div>
   );
 };
 
 export default App;
+
+
+
+
+
+// import React from 'react';
+// import ProductList from './components/ProductList';
+// import ProductDetails from './components/ProductDetails';
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <ProductList />
+//     </div>
+//   );
+// };
+
+// export default App;
 
 // import { useState, useEffect } from 'react';
 // import ProductList from './components/ProductList';

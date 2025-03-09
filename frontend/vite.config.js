@@ -6,10 +6,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000', // Your backend API
+        target: 'http://localhost:5000/api/products',
         changeOrigin: true,
-        secure: false, // Use this only if you're testing without HTTPS
-      }
-    }
-  }
+        secure: false,
+      },
+    },
+  },
 });
